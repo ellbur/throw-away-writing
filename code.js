@@ -11,6 +11,9 @@ function updateStats() {
 $("body").ready(function () {
     $("#throw-away-button").click(function () {
         $("#throw-away-textarea").val('');
+        if (statsVisible) {
+            updateStats();
+        }
     });
     
     $("#show-stats-button").click(function() {
