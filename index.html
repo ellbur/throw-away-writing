@@ -14,12 +14,23 @@
     <body>
         <h1 class="throw-away-title">Throw-Away Writing</h1>
         
-        <div class="throw-away-center">
-            <textarea id="throw-away-textarea" class="throw-away" rows="25" cols="60"></textarea>
-            <p class="throw-away-actions">
-                <button id="throw-away-button">Throw Away</button>
-            </p>
+        <div class="throw-away-center-container">
+            <div class="throw-away-center">
+                <textarea id="throw-away-textarea" class="throw-away" rows="25" cols="60"></textarea>
+                <p class="throw-away-actions">
+                    <button id="throw-away-button">Throw Away</button>
+                </p>
+            </div>
         </div>
+        
+        <p id="throw-away-stats-bar" class="throw-away-footer">
+            <button id="show-stats-button" title="Show stats" class="show-hide">+ Stats</button>
+            <button id="hide-stats-button" title="Hide stats" class="show-hide">- Stats</button>
+
+            <span id="throw-away-stats">
+                Words: <span id="word-count">0</span>
+            </span>
+        </p>
     </body>
 </html>
 

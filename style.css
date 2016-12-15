@@ -7,9 +7,19 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     justify-content: flex-start;
     background-color: #6f5959;
+    font-family: monospace;
+    color: white;
+}
+
+.throw-away-center-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .throw-away-center {
@@ -40,7 +50,6 @@ h1.throw-away-title {
 
 p.throw-away-actions {
     text-align: right;
-    margin-bottom: 40px;
 }
 
 button {
@@ -58,3 +67,24 @@ button {
 button:hover {
     background-color: #6f3131;
 }
+
+.throw-away-footer {
+    text-align: left;
+}
+
+.throw-away-footer:not(.stats-visible) > #hide-stats-button {
+    display: none;
+}
+
+.throw-away-footer.stats-visible > #show-stats-button {
+    display: none;
+}
+
+.throw-away-footer:not(.stats-visible) > #throw-away-stats {
+    display: none;
+}
+
+#throw-away-stats {
+    margin-left: 15px;
+}
+
